@@ -1,0 +1,165 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    font-family: "Monaco";
+    margin: 0 auto;
+    color: #c85108;
+    overflow: hidden;
+}
+
+#0 {
+    overflow: hidden;
+}
+
+/* Styling nav circle */
+
+#menu {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    font-size: 200%;
+}
+
+.menu-button {
+    opacity: 1;
+    z-index: -1;
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: #c85108;
+    overflow: hidden;
+    text-decoration: none;
+    line-height: 120px;
+    transition: .1s;
+    color: #a20e0e;
+}
+
+.menu-button:hover {
+    background-color: #a20e0e;
+    box-shadow: 0 5px 10px black;
+}
+
+#menu:not(:target)>a:first-of-type,
+#menu:target>a:last-of-type {
+    opacity: 1;
+    z-index: 1;
+}
+
+#menu :not(:target)>.icon-open:before,
+#menu:target>.icon-close:before {
+    opacity: 1;
+    overflow-x: hidden;
+}
+
+.menu-item {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 100%;
+    background-color: #c85108;
+    z-index: -2;
+    transition: .5s;
+}
+
+.menu-item:hover {
+    opacity: 0.8;
+    box-shadow: 0 5px 10px black;
+    background-color: #a20e0e;
+}
+
+.menu-item a {
+    color: #fff;
+    position: relative;
+    left: 0;
+    text-decoration: none;
+}
+
+#menu:target>.menu-item:nth-child(3) {
+    transform: rotate(60deg) translateY(85px) translateX(-115px) rotate(300deg);
+    transition-delay: 0s;
+}
+#menu:target>.menu-item:nth-child(4) {
+    transform: rotate(20deg) translateY(60px) translateX(-115px) rotate(-20deg);
+    transition-delay: 0.1s;
+}
+#menu:target>.menu-item:nth-child(5) {
+    transform: rotate(-20deg) translateY(50px) translateX(-95px) rotate(20deg);
+    transition-delay: 0.2s;
+}
+#menu:target>.menu-item:nth-child(6) {
+    transform: rotate(-60deg) translateY(48px) translateX(-74px) rotate(60deg);
+    transition-delay: 0.3s;
+}
+
+.container {
+    position: absolute;
+    left: 95%;
+    top: 75px;
+}
+
+.fa-bars {
+    position: absolute;
+    top: 37%;
+    left: 38%;
+    color: #f3f0d1;
+}
+
+/* end of circle menu */
+
+/* styling intro to me */
+
+.intro-design {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    font-size: 48px;
+}
+
+.intro {
+    font-size: 28px;
+}
+
+.intro-to-me {
+    position: absolute;
+    top:40%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+    text-align: center;
+    font-family: "Monaco";
+    margin: 0 auto;
+    background: #e29c68;
+    color: #c85108;
+}
+ 
+.rider {
+    color: #f3f0d1;
+}
+
+.front-page {
+    background: #e29c68;
+    width: 100%;
+    height: 100%;
+}
