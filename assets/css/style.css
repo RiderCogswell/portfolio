@@ -186,6 +186,11 @@ body {
     justify-content: space-around;
 }
 
+.project-name a {
+    text-decoration: none;
+    color: #f3f0d1;
+}
+
 .project {
     flex: 1;
     margin: 20px;
