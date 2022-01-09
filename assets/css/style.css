@@ -5,12 +5,19 @@
     box-sizing: border-box;
 }
 
+html,body {
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+    }
+
 body {
     text-align: center;
     font-family: "Monaco";
     margin: 0 auto;
     color: #c85108;
     background: #f3f0d1;
+    background: 100%;
 }
 
 #0 {
@@ -23,11 +30,12 @@ body {
     width: 150px;
     height: 150px;
     position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    right: 0px;
+    top: 0px;
+    transform: translate(0%, 0%);
     list-style: none;
     font-size: 200%;
+
 }
 
 .menu-button {
@@ -109,9 +117,7 @@ body {
 }
 
 .container {
-    position: absolute;
-    left: 95%;
-    top: 75px;
+    position: relative;
 }
 
 .fa-bars {
@@ -219,3 +225,130 @@ body {
     margin-bottom: 15px;
     color: #e29c68;
 }
+
+/* about me section */
+
+.secondary {
+    color: #c85108;
+    border-color: #e29c68;
+}
+
+.me {
+    margin: 50px auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.my-section {
+    flex: 3 50%;
+}
+
+.my-story {
+    flex: 1 2 40%;
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 10px;
+}
+
+.picture {
+    margin: 0 0 30px 15px;
+  
+}
+
+.picture img {
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+.my-story p {
+    font-size: 20px;
+    text-align: center;
+    line-height: 2.3;
+}
+
+/* footer section */
+
+footer {
+    background: #e29c68;
+    width: 100%;
+    padding: 40px 35px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: #f3f0d1;
+}
+
+.footer-cr {
+    line-height: 1.5;
+}
+
+/* media queries */
+
+@media screen and (max-width: 980px) {
+    header {
+
+    }
+
+    .intro-design {
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .intro-design h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .me {
+        flex-direction: column;
+    }
+
+    .picture {
+        margin: 0 5px 30px 5px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .intro-design h1 {
+        font-size: 36px;
+    }
+
+    .intro {
+        font-size: 24px;
+    }
+
+    .section-title {
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .intro-design h1 {
+        font-size: 40px;
+    }
+
+    .intro {
+        font-size: 20px;
+    }
+
+    .my-story p {
+        line-height: 1.5;
+    }
+
+    .section-title {
+       font-size: 36px;
+       width: 95%;
+    }
+
+    .intro-to-me {
+        width: 75%;
+    }
+}
+
