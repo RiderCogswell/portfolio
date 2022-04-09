@@ -276,6 +276,10 @@ body {
   
 }
 
+#phone {
+    color: var(--primary-color);
+}
+
 .picture img {
     max-width: 100%;
     border-radius: 15px;
